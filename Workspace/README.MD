@@ -48,4 +48,4 @@ com todos os comandos do sistema e podendo executar todos os programas por CLI.
 
 Uma dia que achamos válida e instalar o app [Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=pt-br&gl=br)
  ele nos fornece um rapido acesso a todos os terminais em nossa máquina de forma rápida e personalizável.
-![]("./terminal.png")
+![](terminal.png)
