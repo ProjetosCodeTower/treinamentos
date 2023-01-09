@@ -68,7 +68,7 @@ vamos instalar para ser executado em conjunto com o WSL já instalado esse tutor
 [instalador do oficial do docker](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
 Assim que baixado e executado será perguntado se ultilizar do docker desktop juntamente com o wsl 2, aceite e siga os passos básicos
-de uma instalação basica do Windows ( *next, next, install* ) e finalizando reinicie a máquina, abrindo o docker novamente
+de uma instalação padrão do Windows ( *next, next, install* ) e finalizando reinicie a máquina, abrindo o docker novamente
 a seguinte tela será apresentada a você:
 
 
