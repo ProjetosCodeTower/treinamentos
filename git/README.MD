@@ -18,7 +18,19 @@ fornecendo um catálogo de serviços bem extenso.
 ### Instalando
 Navegue até o [site oficial](https://git-scm.com/) e baixe o instalador padrão para windows e siga a instalação padrão( next, next, intall )
 
-Instalando no linux use seu intalador de pacote da sua distribuição.
+Instalando no linux use seu intalador de pacote da sua distribuição contudo já se tem uma versão padrão do git no próprio
+sistema.
+
+
+## Atividade
+
+#### Faça um commit neste repositório com as seguinte características
+
+1. Clone esse repositório em sua máquina
+2. Crie uma 'branch' á partir da master com o nome da sua série/anime/filme favorito.
+3. Na pasta **entrega** crie um arquivo com seu nome no formato .MD e descreva sua linguagem de programação favorita e as caracteristicas dela. e o por que ela é tao legal para você.(veja o exemplo SAMPLE.MD).
+4. Faça o comit com seu nome.
+5. Faça um pull request para a branch main.
 
 
 
