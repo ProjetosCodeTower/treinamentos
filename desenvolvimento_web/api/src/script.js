@@ -1,3 +1,5 @@
+//Criando variaveis para mexer com os elementos do HTML através do nome do elemento da class
+
 const pokemonName = document.querySelector(".pokemon__name")
 const pokemonNumber = document.querySelector(".pokemon__number")
 const pokemonImage = document.querySelector(".pokemon__image")
@@ -10,47 +12,32 @@ const input = document.querySelector(".input__search")
 
 let searchPokemon = 1
 
+//Função para buscar informações na Api
+
 
 const fetchPokemon = async (pokemon) => {
-    const ApiResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
-    if (ApiResponse.status == 200){
-        const data = await ApiResponse.json();
-        return data
-    }
+    /**Escreva aqui a função de FETCH para pegar os dados da api  */
+
 }
+
+
 
 const renderPokemon = async (pokemon) => {
     pokemonName.innerHTML = "Carregando..."
     pokemonNumber.innerHTML = ''
-    const data = await fetchPokemon(pokemon);
-    console.log(data)
+    /** Escreva a função que vai consumir os dados vindo da função FETCH */
 
-    if(data){
-        pokemonName.innerHTML = data.name
-        pokemonNumber.innerHTML = data.id
-        pokemonImage.style.display = 'inline'
-        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny']
-        // pokemonImage.src = data['sprites']['other']['official-artwork']['front_default']
-        searchPokemon = data.id
-
-    } else {
-        pokemonName.innerHTML = "Pokémon não existe"
-        pokemonNumber.innerHTML = "???"
-        pokemonImage.style.display = 'none'
-        
-
-    }
     
     }
 
-
+//Adicionando evento ao inputField para fazer o FETCH dos pokemons pesquisados no campo
 form.addEventListener("submit", () => {
     event.preventDefault()
     renderPokemon(input.value.toLowerCase())
     input.value = ''
 })
 
-
+//Adicionando Evento ao "prev.button" para buscar o pokémon anterior
 prev.addEventListener("click", () => {
     if(searchPokemon > 1){
         searchPokemon -= 1
@@ -58,6 +45,7 @@ prev.addEventListener("click", () => {
     }
 })
 
+//Adicionando Evento ao "next.button" para buscar o próximo pokémon 
 next.addEventListener("click", () => {
     searchPokemon += 1
     renderPokemon(searchPokemon)
