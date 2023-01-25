@@ -16,10 +16,9 @@ let searchPokemon = 1
 
 
 const fetchPokemon = async (pokemon) => {
-    /**Escreva aqui a função de FETCH para pegar os dados da api  */
+    /**Escreva aqui a função de FETCH para pegar os dados da api  */    
 
 }
-
 
 
 const renderPokemon = async (pokemon) => {
@@ -32,23 +31,18 @@ const renderPokemon = async (pokemon) => {
 
 //Adicionando evento ao inputField para fazer o FETCH dos pokemons pesquisados no campo
 form.addEventListener("submit", () => {
-    event.preventDefault()
-    renderPokemon(input.value.toLowerCase())
-    input.value = ''
+
 })
 
 //Adicionando Evento ao "prev.button" para buscar o pokémon anterior
 prev.addEventListener("click", () => {
-    if(searchPokemon > 1){
-        searchPokemon -= 1
-        renderPokemon(searchPokemon);
-    }
+
+    
 })
 
 //Adicionando Evento ao "next.button" para buscar o próximo pokémon 
 next.addEventListener("click", () => {
-    searchPokemon += 1
-    renderPokemon(searchPokemon)
+
 })
 
 renderPokemon(searchPokemon)
