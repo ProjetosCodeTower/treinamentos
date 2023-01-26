@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pokedex</title>
+    <!-- Imports de Imagens/Icons -->
+    <link rel="icon" href="./images/favicon-16x16.png">
+
+    <!-- Import de Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- imports de bibliotecas e arquivos JS/CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+     
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" >
+    <!-- Usa "defer" para carregar o script depois do html -->
+</head>
+
+<body>
+    
+
+    <main>
+        
+        <h1 class="pokemon__data">
+            <span class="pokemon__number "></span> -
+            <span class="pokemon__name"></span>
+        </h1>
+
+        <form class="form">
+            <input 
+                type="search"
+                class="input__search"
+                placeholder="Número ou Nome"
+                required
+                />
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">&ltPrev </button>
+            <button class="button btn-next">Next &gt</button>
+        </div>
+
+        <img src="pokedex.png" alt="pokedex" class="pokedex">
+        <img src="" alt="pokemon-img" class="pokemon__image">
+        
+    </main>
+</body>
+</html>
